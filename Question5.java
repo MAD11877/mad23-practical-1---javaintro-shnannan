@@ -27,6 +27,33 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    // Prompt the user for the number of integers
+    int numIntegers = in.nextInt();
+
+    // Read in the integers
+    int[] integers = new int[numIntegers];
+    for (int i = 0; i < numIntegers; i++) {
+      integers[i] = in.nextInt();
+    }
+
+    // Calculate the mode (highest occurrence)
+    int mode = 0;
+    int maxCount = 0;
+    for (int i = 0; i < numIntegers; i++) {
+      int count = 0;
+      for (int j = 0; j < numIntegers; j++) {
+        if (integers[j] == integers[i]) {
+          count++;
+        }
+      }
+      if (count > maxCount) {
+        mode = integers[i];
+        maxCount = count;
+      }
+    }
+
+    // Print out the mode
+    System.out.println(mode);
+    in.close();
   }
 }

@@ -10,7 +10,14 @@ public class Question3
      * Hint: in.nextInt() to read integer
      */
      
-    Scanner in = new Scanner(System.in);
+    Scanner in = new Scanner(System.in);    // Creates Scanner Object 
     
+    int num = in.nextInt();
+    
+    int newInt = num * num; 
+    
+    System.out.println(newInt);    // Print multiplied integer 
+    
+    in.close();
   }
 }
