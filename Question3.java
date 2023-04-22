@@ -12,9 +12,9 @@ public class Question3
      
     Scanner in = new Scanner(System.in);    // Creates Scanner Object 
     
-    System.out.println("Input an integer: ");
+    int num = in.nextInt();
     
-    int newInt = Integer * Integer; 
+    int newInt = num * num; 
     
     System.out.println("New multiplied integer: " + newInt);    // Print multiplied integer 
     
