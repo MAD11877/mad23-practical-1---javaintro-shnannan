@@ -24,6 +24,6 @@ public class Question2
     
     System.out.print("Your Body Mass Index (BMI) is: " + BMI);  
     
-    input.close(); 
+    in.close(); 
   }
 }
