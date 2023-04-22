@@ -18,7 +18,7 @@ public class Question2
     
     double BMI  = weight / (height * height);   // Calculate user BMI 
     
-    System.out.println("Your Body Mass Index (BMI) is: " + BMI);  
+    System.out.println(BMI);  // printing out BMI
     
     in.close(); 
   }
