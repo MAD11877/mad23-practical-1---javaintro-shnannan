@@ -16,7 +16,7 @@ public class Question3
     
     int newInt = num * num; 
     
-    System.out.println("New multiplied integer: " + newInt);    // Print multiplied integer 
+    System.out.println(newInt);    // Print multiplied integer 
     
     in.close();
   }
